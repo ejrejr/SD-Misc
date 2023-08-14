@@ -1,0 +1,1818 @@
+{
+  "last_node_id": 75,
+  "last_link_id": 84,
+  "nodes": [
+    {
+      "id": 15,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1139.1103087741085,
+        -121.78948886648053
+      ],
+      "size": {
+        "0": 210,
+        "1": 54
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 19
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 54,
+          "widget": {
+            "name": "text",
+            "config": [
+              "STRING",
+              {
+                "multiline": true
+              }
+            ]
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            23
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "The team of battle worn dirty dungeons-and-dragon style fantasy adventurers (frowning:1.4) with weapons drawn and spell casting are startled by goblins with weapons at entry to goblin lair , mage swordsmen dwarf necromancer rogue, vast perspective (cinematic shot:1.6) ({detailed oil painting | charcoal drawing | pen and ink | detailed pencil | photo} + photography :1.6) art style of ( Ingrid Baars + {Michael Whelan | Gerald Brom | Guillem H. Pongiluppi } :1.4) and (Mike Mignola:0.75) and ( Emil Carlsen :0.5) and (John Singer Sargent:0.5) supernatural nightmare dream, (3/4 medium shot waist shot), looking at viewer, (golden hour, bokeh, haze filter), twilight, clean face + forehead, detailed eyes +  face + skin , asymmetry, cinematic dramatic lighting, {HQ | 8K | hyper detailed8k} { 4k | 4k UHD | ultra HDR | perfect quality} { intricate | ultra quality | super quality | perfect detail | ultra detail, | super detail} { perfect resolution | very high resolution}, sharp focus, bokeh, photo shot on Panasonic Lumix GH5 Camera, film grain, depth of field, rule of thirds, Tyndall effect lighting"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 16,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1139.1103087741085,
+        -31.789488866480543
+      ],
+      "size": {
+        "0": 210,
+        "1": 54
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 20
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 22,
+          "widget": {
+            "name": "text",
+            "config": [
+              "STRING",
+              {
+                "multiline": true
+              }
+            ]
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            24
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "(Buddha's hand:1.6), headphones, mismatched eyes, distorted eyes, anime pose, pose, posed, blurry, low quality, amateur, bored, boring, low quality, floating swords, fragments, disembodied pieces, wrinkled hands, mutated, disfigured, (mutated hands:1.6), cloven hands, extra fingers, missing fingers, amputee, perfect skin, unblemished skin, heavy makeup, plastic skin, sexy wardrobe, cleavage, comic panels, close-up, up close, front-facing, forward-facing, face shot, watermark, text, caption, label, diptych, triptych, photoshopped, paste"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 36,
+      "type": "Note",
+      "pos": [
+        113.10000698852531,
+        -183.45996956825252
+      ],
+      "size": {
+        "0": 315.70074462890625,
+        "1": 147.9551239013672
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "title": "Note - Load Checkpoint BASE",
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "This is a checkpoint model loader. \n - This is set up automatically with the optimal settings for whatever SD model version you choose to use.\n - In this example, it is for the Base SDXL model\n - This node is also used for SD1.5 and SD2.x models\n \nNOTE: When loading in another person's workflow, be sure to manually choose your own *local* model. This also applies to LoRas and all their deviations"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 37,
+      "type": "Note",
+      "pos": [
+        639.0799706420896,
+        -164.52016973876948
+      ],
+      "size": {
+        "0": 330,
+        "1": 140
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "title": "Note - Load Checkpoint REFINER",
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "This is a checkpoint model loader. \n - This is set up automatically with the optimal settings for whatever SD model version you choose to use.\n - In this example, it is for the Refiner SDXL model\n\nNOTE: When loading in another person's workflow, be sure to manually choose your own *local* model. This also applies to LoRas and all their deviations."
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 40,
+      "type": "Note",
+      "pos": [
+        1325,
+        234
+      ],
+      "size": {
+        "0": 451.5049743652344,
+        "1": 424.4164123535156
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "title": "Note - KSampler  ADVANCED General Information",
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Here are the settings that SHOULD stay in place if you want this workflow to work correctly:\n - add_noise: enable = This adds random noise into the picture so the model can denoise it\n\n - return_with_leftover_noise: enable = This sends the latent image data and all it's leftover noise to the next KSampler node.\n\nThe settings to pay attention to:\n - control_after_generate = generates a new random seed after each workflow job completed.\n - steps = This is the amount of iterations you would like to run the positive and negative CLIP prompts through. Each Step will add (positive) or remove (negative) pixels based on what stable diffusion \"thinks\" should be there according to the model's training\n - cfg = This is how much you want SDXL to adhere to the prompt. Lower CFG gives you more creative but often blurrier results. Higher CFG (recommended max 10) gives you stricter results according to the CLIP prompt. If the CFG value is too high, it can also result in \"burn-in\" where the edges of the picture become even stronger, often highlighting details in unnatural ways.\n - sampler_name = This is the sampler type, and unfortunately different samplers and schedulers have better results with fewer steps, while others have better success with higher steps. This will require experimentation on your part!\n - scheduler = The algorithm/method used to choose the timesteps to denoise the picture.\n - start_at_step = This is the step number the KSampler will start out it's process of de-noising the picture or \"removing the random noise to reveal the picture within\". The first KSampler usually starts with Step 0. Starting at step 0 is the same as setting denoise to 1.0 in the regular Sampler node.\n - end_at_step = This is the step number the KSampler will stop it's process of de-noising the picture. If there is any remaining leftover noise and return_with_leftover_noise is enabled, then it will pass on the left over noise to the next KSampler (assuming there is another one)."
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 41,
+      "type": "Note",
+      "pos": [
+        2160.7710413363047,
+        229.60259386016995
+      ],
+      "size": {
+        "0": 320,
+        "1": 120
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "title": "Note - VAE Decoder",
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "This node will take the latent data from the KSampler and, using the VAE, it will decode it into visible data\n\nVAE = Latent --> Visible\n\nThis can then be sent to the Save Image node to be saved as a PNG."
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 42,
+      "type": "Note",
+      "pos": [
+        564.5041024540307,
+        801.1200708259006
+      ],
+      "size": {
+        "0": 260,
+        "1": 210
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "title": "Note - Empty Latent Image",
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "This node sets the image's resolution in Width and Height.\n\nNOTE: For SDXL, it is recommended to use trained values listed below:\n - 1024 x 1024\n - 1152 x 896\n - 896  x 1152\n - 1216 x 832\n - 832  x 1216\n - 1344 x 768\n - 768  x 1344\n - 1536 x 640\n - 640  x 1536"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 43,
+      "type": "Note",
+      "pos": [
+        1125,
+        70
+      ],
+      "size": {
+        "0": 240,
+        "1": 80
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "title": "Note - CLIP Encode (REFINER)",
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "These nodes receive the text from the prompt and use the optimal CLIP settings for the specified checkpoint model (in this case: SDXL Refiner)"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": [
+        599.4967909953033,
+        359.4780241240287
+      ],
+      "size": {
+        "0": 210,
+        "1": 54
+      },
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 52
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 18,
+          "widget": {
+            "name": "text",
+            "config": [
+              "STRING",
+              {
+                "multiline": true
+              }
+            ]
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            12
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "(Buddha's hand:1.6), headphones, mismatched eyes, distorted eyes, anime pose, pose, posed, blurry, low quality, amateur, bored, boring, low quality, floating swords, fragments, disembodied pieces, wrinkled hands, mutated, disfigured, (mutated hands:1.6), cloven hands, extra fingers, missing fingers, amputee, perfect skin, unblemished skin, heavy makeup, plastic skin, sexy wardrobe, cleavage, comic panels, close-up, up close, front-facing, forward-facing, face shot, watermark, text, caption, label, diptych, triptych, photoshopped, paste"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 39,
+      "type": "Note",
+      "pos": [
+        599.4967909953033,
+        449.4780241240287
+      ],
+      "size": {
+        "0": 210,
+        "1": 80
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "title": "Note - CLIP Encode (BASE)",
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "These nodes receive the text from the prompt and use the optimal CLIP settings for the specified checkpoint model (in this case: SDXL Base)"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 48,
+      "type": "Note",
+      "pos": [
+        1036,
+        1018
+      ],
+      "size": {
+        "0": 213.90769958496094,
+        "1": 110.17156982421875
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "These can be used to control the total sampling steps and the step at which the sampling switches to the refiner."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 12,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        629.0799706420896,
+        -315.5201697387699
+      ],
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            14
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            19,
+            20
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            34
+          ],
+          "shape": 3,
+          "slot_index": 2
+        }
+      ],
+      "title": "Load Checkpoint - REFINER",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "SDXL\\sdXL_v10RefinerVAEFix.safetensors"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 50,
+      "type": "VAEDecode",
+      "pos": [
+        1854.6605047607422,
+        568.7679505348206
+      ],
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 45
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 46
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            47
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      }
+    },
+    {
+      "id": 45,
+      "type": "PrimitiveNode",
+      "pos": [
+        1039.5286840013239,
+        734.6113881513106
+      ],
+      "size": {
+        "0": 210,
+        "1": 82
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            38,
+            41
+          ],
+          "widget": {
+            "name": "steps",
+            "config": [
+              "INT",
+              {
+                "default": 20,
+                "min": 1,
+                "max": 10000
+              }
+            ]
+          }
+        }
+      ],
+      "title": "steps",
+      "properties": {},
+      "widgets_values": [
+        81,
+        "fixed"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 47,
+      "type": "PrimitiveNode",
+      "pos": [
+        1037.5286840013239,
+        881.6113881513106
+      ],
+      "size": {
+        "0": 210,
+        "1": 82
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            43,
+            44
+          ],
+          "widget": {
+            "name": "end_at_step",
+            "config": [
+              "INT",
+              {
+                "default": 10000,
+                "min": 0,
+                "max": 10000
+              }
+            ]
+          },
+          "slot_index": 0
+        }
+      ],
+      "title": "end_at_step",
+      "properties": {},
+      "widgets_values": [
+        51,
+        "fixed"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 6,
+      "type": "CLIPTextEncode",
+      "pos": [
+        599.4967909953033,
+        269.4780241240285
+      ],
+      "size": {
+        "0": 210,
+        "1": 54
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 51
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 53,
+          "widget": {
+            "name": "text",
+            "config": [
+              "STRING",
+              {
+                "multiline": true
+              }
+            ]
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            11
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "The team of battle worn dirty dungeons-and-dragon style fantasy adventurers (frowning:1.4) with weapons drawn and spell casting are startled by goblins with weapons at entry to goblin lair , mage swordsmen dwarf necromancer rogue, vast perspective (cinematic shot:1.6) ({detailed oil painting | charcoal drawing | pen and ink | detailed pencil | photo} + photography :1.6) art style of ( Ingrid Baars + {Michael Whelan | Gerald Brom | Guillem H. Pongiluppi } :1.4) and (Mike Mignola:0.75) and ( Emil Carlsen :0.5) and (John Singer Sargent:0.5) supernatural nightmare dream, (3/4 medium shot waist shot), looking at viewer, (golden hour, bokeh, haze filter), twilight, clean face + forehead, detailed eyes +  face + skin , asymmetry, cinematic dramatic lighting, {HQ | 8K | hyper detailed8k} { 4k | 4k UHD | ultra HDR | perfect quality} { intricate | ultra quality | super quality | perfect detail | ultra detail, | super detail} { perfect resolution | very high resolution}, sharp focus, bokeh, photo shot on Panasonic Lumix GH5 Camera, film grain, depth of field, rule of thirds, Tyndall effect lighting"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 49,
+      "type": "PreviewImage",
+      "pos": [
+        2401,
+        779
+      ],
+      "size": {
+        "0": 552.3745727539062,
+        "1": 392.97711181640625
+      },
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 47
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 10,
+      "type": "KSamplerAdvanced",
+      "pos": [
+        1000,
+        230
+      ],
+      "size": {
+        "0": 300,
+        "1": 334
+      },
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 49
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 11
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 12
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 27
+        },
+        {
+          "name": "steps",
+          "type": "INT",
+          "link": 41,
+          "widget": {
+            "name": "steps",
+            "config": [
+              "INT",
+              {
+                "default": 20,
+                "min": 1,
+                "max": 10000
+              }
+            ]
+          },
+          "slot_index": 4
+        },
+        {
+          "name": "end_at_step",
+          "type": "INT",
+          "link": 43,
+          "widget": {
+            "name": "end_at_step",
+            "config": [
+              "INT",
+              {
+                "default": 10000,
+                "min": 0,
+                "max": 10000
+              }
+            ]
+          },
+          "slot_index": 5
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            13,
+            45
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "KSampler (Advanced) - BASE",
+      "properties": {
+        "Node name for S&R": "KSamplerAdvanced"
+      },
+      "widgets_values": [
+        "enable",
+        910555294607824,
+        "randomize",
+        81,
+        8,
+        "euler_ancestral",
+        "normal",
+        0,
+        51,
+        "enable"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 11,
+      "type": "KSamplerAdvanced",
+      "pos": [
+        1800,
+        130
+      ],
+      "size": {
+        "0": 300,
+        "1": 340
+      },
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 14,
+          "slot_index": 0
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 23
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 24
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 13
+        },
+        {
+          "name": "steps",
+          "type": "INT",
+          "link": 38,
+          "widget": {
+            "name": "steps",
+            "config": [
+              "INT",
+              {
+                "default": 20,
+                "min": 1,
+                "max": 10000
+              }
+            ]
+          },
+          "slot_index": 4
+        },
+        {
+          "name": "start_at_step",
+          "type": "INT",
+          "link": 44,
+          "widget": {
+            "name": "start_at_step",
+            "config": [
+              "INT",
+              {
+                "default": 0,
+                "min": 0,
+                "max": 10000
+              }
+            ]
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            25
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "KSampler (Advanced) - REFINER",
+      "properties": {
+        "Node name for S&R": "KSamplerAdvanced"
+      },
+      "widgets_values": [
+        "disable",
+        0,
+        "fixed",
+        81,
+        6.5,
+        "euler_ancestral",
+        "normal",
+        51,
+        10000,
+        "disable"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 5,
+      "type": "EmptyLatentImage",
+      "pos": [
+        544.5041024540301,
+        651.1200708259006
+      ],
+      "size": {
+        "0": 300,
+        "1": 110
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            27
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 61,
+      "type": "Image Save",
+      "pos": [
+        2665.4544677734375,
+        -15.454559326171875
+      ],
+      "size": {
+        "0": 315,
+        "1": 558
+      },
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 60
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "link": 70,
+          "widget": {
+            "name": "filename_prefix",
+            "config": [
+              "STRING",
+              {
+                "default": "ComfyUI"
+              }
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Image Save"
+      },
+      "widgets_values": [
+        "[time(%Y-%m-%d)]",
+        "ComfyUI",
+        "_",
+        4,
+        "false",
+        "png",
+        100,
+        "false",
+        "false",
+        "false",
+        "true",
+        "true",
+        "true"
+      ]
+    },
+    {
+      "id": 17,
+      "type": "VAEDecode",
+      "pos": [
+        2220.7710413363047,
+        129.6025938601699
+      ],
+      "size": {
+        "0": 200,
+        "1": 50
+      },
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 25
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 34
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            60
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 14,
+      "type": "PrimitiveNode",
+      "pos": [
+        31,
+        549
+      ],
+      "size": {
+        "0": 389.3240661621094,
+        "1": 167.819091796875
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            18,
+            22
+          ],
+          "widget": {
+            "name": "text",
+            "config": [
+              "STRING",
+              {
+                "multiline": true
+              }
+            ]
+          },
+          "slot_index": 0
+        }
+      ],
+      "title": "Negative Prompt (Text)",
+      "properties": {},
+      "widgets_values": [
+        "(Buddha's hand:1.6), headphones, mismatched eyes, distorted eyes, anime pose, pose, posed, blurry, low quality, amateur, bored, boring, low quality, floating swords, fragments, disembodied pieces, wrinkled hands, mutated, disfigured, (mutated hands:1.6), cloven hands, extra fingers, missing fingers, amputee, perfect skin, unblemished skin, heavy makeup, plastic skin, sexy wardrobe, cleavage, comic panels, close-up, up close, front-facing, forward-facing, face shot, watermark, text, caption, label, diptych, triptych, photoshopped, paste"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 38,
+      "type": "Note",
+      "pos": [
+        32,
+        765
+      ],
+      "size": {
+        "0": 379.06402587890625,
+        "1": 119.42910766601562
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "title": "Note - Text Prompts",
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "These nodes are where you include the text for:\n - what you want in the picture (Positive Prompt, Green)\n - or what you don't want in the picture (Negative Prompt, Red)\n\nThis node type is called a \"PrimitiveNode\" if you are searching for the node type."
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 52,
+      "type": "DPRandomGenerator",
+      "pos": [
+        26,
+        292
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            53,
+            54,
+            65,
+            66
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DPRandomGenerator"
+      },
+      "widgets_values": [
+        "Epic Professional quality (art by __rikkar69/Artists__ and Ingrid Baars:1.6) of dynamic action cinematic shot of fantastical (__female2__) __nameHer__ who is (__expression__:1.4) and __verb__ (man) while __situation__ , fantasy sci-fi, mid-body shot, (3/4 profile pose:1.2), medium shot, symmetry, reflective eyes, natural pupils, (natural blemished skin :1.2), natural hands, natural fingers, at __locAbstract__, (film grain:1.4), (RAW DSLR __photo_angle__ shot on __rikkar69/cameras__), (cinematic dramatic lighting:1.2) __timeOfDay__"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 65,
+      "type": "Reroute",
+      "pos": [
+        1985.1937656715072,
+        -56.74744494906628
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 83
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "STRING",
+          "links": [
+            70
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 63,
+      "type": "Text String Truncate",
+      "pos": [
+        -354,
+        81
+      ],
+      "size": {
+        "0": 315,
+        "1": 166
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 66
+        },
+        {
+          "name": "text_b",
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "text_c",
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "text_d",
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            80
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text String Truncate"
+      },
+      "widgets_values": [
+        "characters",
+        "beginning",
+        96
+      ]
+    },
+    {
+      "id": 64,
+      "type": "Text to Console",
+      "pos": [
+        -335,
+        717
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 84
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text to Console"
+      },
+      "widgets_values": [
+        "Truncation: "
+      ]
+    },
+    {
+      "id": 59,
+      "type": "Save Text File",
+      "pos": [
+        -336,
+        536
+      ],
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 65
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "link": 82,
+          "widget": {
+            "name": "filename_prefix",
+            "config": [
+              "STRING",
+              {
+                "default": "ComfyUI"
+              }
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Save Text File"
+      },
+      "widgets_values": [
+        "./output/[time(%Y-%m-%d)]",
+        "ComfyUI",
+        "_",
+        4
+      ]
+    },
+    {
+      "id": 75,
+      "type": "Reroute",
+      "pos": [
+        77,
+        104
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 81
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "STRING",
+          "links": [
+            82,
+            83,
+            84
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 74,
+      "type": "Text Find and Replace",
+      "pos": [
+        -356,
+        297
+      ],
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 80
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            81
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Find and Replace"
+      },
+      "widgets_values": [
+        "[\\\\\\/\\:\\*\\?\\\"]",
+        "-"
+      ]
+    },
+    {
+      "id": 51,
+      "type": "LoraLoader",
+      "pos": [
+        219,
+        62
+      ],
+      "size": {
+        "0": 315,
+        "1": 126
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 48
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 50
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            49
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            51,
+            52
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraLoader"
+      },
+      "widgets_values": [
+        "sd_xl_offset_example-lora_1.0.safetensors",
+        0.25,
+        1
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 4,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        97.10000698852531,
+        -333.4599695682527
+      ],
+      "size": {
+        "0": 350,
+        "1": 100
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            48
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            50
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            46
+          ],
+          "slot_index": 2
+        }
+      ],
+      "title": "Load Checkpoint - BASE",
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "SDXL\\sd_xl_base_1.0_0.9vae.safetensors"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    }
+  ],
+  "links": [
+    [
+      11,
+      6,
+      0,
+      10,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      12,
+      7,
+      0,
+      10,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      13,
+      10,
+      0,
+      11,
+      3,
+      "LATENT"
+    ],
+    [
+      14,
+      12,
+      0,
+      11,
+      0,
+      "MODEL"
+    ],
+    [
+      18,
+      14,
+      0,
+      7,
+      1,
+      "STRING"
+    ],
+    [
+      19,
+      12,
+      1,
+      15,
+      0,
+      "CLIP"
+    ],
+    [
+      20,
+      12,
+      1,
+      16,
+      0,
+      "CLIP"
+    ],
+    [
+      22,
+      14,
+      0,
+      16,
+      1,
+      "STRING"
+    ],
+    [
+      23,
+      15,
+      0,
+      11,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      24,
+      16,
+      0,
+      11,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      25,
+      11,
+      0,
+      17,
+      0,
+      "LATENT"
+    ],
+    [
+      27,
+      5,
+      0,
+      10,
+      3,
+      "LATENT"
+    ],
+    [
+      34,
+      12,
+      2,
+      17,
+      1,
+      "VAE"
+    ],
+    [
+      38,
+      45,
+      0,
+      11,
+      4,
+      "INT"
+    ],
+    [
+      41,
+      45,
+      0,
+      10,
+      4,
+      "INT"
+    ],
+    [
+      43,
+      47,
+      0,
+      10,
+      5,
+      "INT"
+    ],
+    [
+      44,
+      47,
+      0,
+      11,
+      5,
+      "INT"
+    ],
+    [
+      45,
+      10,
+      0,
+      50,
+      0,
+      "LATENT"
+    ],
+    [
+      46,
+      4,
+      2,
+      50,
+      1,
+      "VAE"
+    ],
+    [
+      47,
+      50,
+      0,
+      49,
+      0,
+      "IMAGE"
+    ],
+    [
+      48,
+      4,
+      0,
+      51,
+      0,
+      "MODEL"
+    ],
+    [
+      49,
+      51,
+      0,
+      10,
+      0,
+      "MODEL"
+    ],
+    [
+      50,
+      4,
+      1,
+      51,
+      1,
+      "CLIP"
+    ],
+    [
+      51,
+      51,
+      1,
+      6,
+      0,
+      "CLIP"
+    ],
+    [
+      52,
+      51,
+      1,
+      7,
+      0,
+      "CLIP"
+    ],
+    [
+      53,
+      52,
+      0,
+      6,
+      1,
+      "STRING"
+    ],
+    [
+      54,
+      52,
+      0,
+      15,
+      1,
+      "STRING"
+    ],
+    [
+      60,
+      17,
+      0,
+      61,
+      0,
+      "IMAGE"
+    ],
+    [
+      65,
+      52,
+      0,
+      59,
+      0,
+      "STRING"
+    ],
+    [
+      66,
+      52,
+      0,
+      63,
+      0,
+      "STRING"
+    ],
+    [
+      70,
+      65,
+      0,
+      61,
+      1,
+      "STRING"
+    ],
+    [
+      80,
+      63,
+      0,
+      74,
+      0,
+      "STRING"
+    ],
+    [
+      81,
+      74,
+      0,
+      75,
+      0,
+      "*"
+    ],
+    [
+      82,
+      75,
+      0,
+      59,
+      1,
+      "STRING"
+    ],
+    [
+      83,
+      75,
+      0,
+      65,
+      0,
+      "*"
+    ],
+    [
+      84,
+      75,
+      0,
+      64,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "Base Prompt",
+      "bounding": [
+        579,
+        189,
+        252,
+        361
+      ],
+      "color": "#3f789e"
+    },
+    {
+      "title": "Refiner Prompt",
+      "bounding": [
+        1102,
+        -201,
+        282,
+        372
+      ],
+      "color": "#3f789e"
+    },
+    {
+      "title": "Text Prompts",
+      "bounding": [
+        -2,
+        209,
+        478,
+        722
+      ],
+      "color": "#3f789e"
+    },
+    {
+      "title": "Load in BASE SDXL Model",
+      "bounding": [
+        87,
+        -413,
+        369,
+        399
+      ],
+      "color": "#a1309b"
+    },
+    {
+      "title": "Load in REFINER SDXL Model",
+      "bounding": [
+        610,
+        -405,
+        391,
+        400
+      ],
+      "color": "#a1309b"
+    },
+    {
+      "title": "Empty Latent Image",
+      "bounding": [
+        524,
+        577,
+        339,
+        443
+      ],
+      "color": "#a1309b"
+    },
+    {
+      "title": "VAE Decoder",
+      "bounding": [
+        2142,
+        51,
+        360,
+        350
+      ],
+      "color": "#b06634"
+    },
+    {
+      "title": "Step Control",
+      "bounding": [
+        1005,
+        623,
+        284,
+        524
+      ],
+      "color": "#3f789e"
+    }
+  ],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}
